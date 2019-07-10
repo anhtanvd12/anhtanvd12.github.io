@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Assignment2</title>
+        <style>
+            body {
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 18px;
+                background-image: url("http://gwfc12.com/plugin/login-background/4.jpg");
+                background-size:cover;
+            }
+            img{
+                height:415px;
+            }
+            .clearfix{
+                clear:both;
+            }
+            ul li {
+                list-style: none ;
+            }
+            #wrapper{
+            }
+            #header {
+                border-bottom: 1px solid #99FFFF;
+                padding: 0px;
+                background-color: black;
+                background-size: cover;
+                width: 100%;
+                text-align: center;
+                height: 55px;
+                width: 100%;
+                position:fixed;
+            }
+            #main_menu img{
+                width: 150px;
+                height: 5px;
+            }
+            #main_menu {
+                margin-top: 18px;
+            }
+            #logo{
+                float:left;
+                height:40px;
+            }
+            #logo img {
+                margin-top: 5px;
+                height: 45px;
+                width:auto;
+            }
+            #wp_content {
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 18px;
+                color: #99FFFF;
+                bottom: 50px;
+                width: 950px;
+                margin: auto;
+            }
+            #wp_content img{
+                height:50px;
+                width:auto;
+
+            }
+            #footer {
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                height: 20px;
+                background-color: black;
+                color: white;
+                clear: both;
+                text-align: center;
+                padding: 5px;
+            }
+            #footer img{
+                height:17px;
+                width:auto;
+            }
+            #Hero_Name h2{
+                margin: 0;
+                padding: 8px 0;
+                font-family: KoreanFont, georgia, serif;
+                font-weight: normal;
+                text-transform: uppercase;
+                letter-spacing: 7px;
+                font-size: 30px;
+                text-align: center;
+                color:red;
+            }
+            #link_sven h1{
+                margin: 0;
+                padding: 8px 0;
+                font-family: KoreanFont, georgia, serif;
+                font-weight: normal;
+                text-transform: uppercase;
+                letter-spacing: 7px;
+                font-size: 30px;
+                text-align: center;
+                color:red;
+            }
+            #link_tiny h1 {
+                margin: 0;
+                padding: 8px 0;
+                font-family: KoreanFont, georgia, serif;
+                font-weight: normal;
+                text-transform: uppercase;
+                letter-spacing: 7px;
+                font-size: 30px;
+                text-align: center;
+                color: red;
+            }
+            #link_kunkka h1 {
+                margin: 0;
+                padding: 8px 0;
+                font-family: KoreanFont, georgia, serif;
+                font-weight: normal;
+                text-transform: uppercase;
+                letter-spacing: 7px;
+                font-size: 30px;
+                text-align: center;
+                color: red;
+            }
+            #link_beastmaster h1 {
+                margin: 0;
+                padding: 8px 0;
+                font-family: KoreanFont, georgia, serif;
+                font-weight: normal;
+                text-transform: uppercase;
+                letter-spacing: 7px;
+                font-size: 30px;
+                text-align: center;
+                color: red;
+            }
+            #link_dragon_knight h1 {
+                margin: 0;
+                padding: 8px 0;
+                font-family: KoreanFont, georgia, serif;
+                font-weight: normal;
+                text-transform: uppercase;
+                letter-spacing: 7px;
+                font-size: 30px;
+                text-align: center;
+                color: red;
+            }
+            #link_rattletrap h1 {
+                margin: 0;
+                padding: 8px 0;
+                font-family: KoreanFont, georgia, serif;
+                font-weight: normal;
+                text-transform: uppercase;
+                letter-spacing: 7px;
+                font-size: 30px;
+                text-align: center;
+                color: red;
+            }
+            #link_omniknight h1 {
+                margin: 0;
+                padding: 8px 0;
+                font-family: KoreanFont, georgia, serif;
+                font-weight: normal;
+                text-transform: uppercase;
+                letter-spacing: 7px;
+                font-size: 30px;
+                text-align: center;
+                color: red;
+            }
+            #link_axe h1 {
+                margin: 0;
+                padding: 8px 0;
+                font-family: KoreanFont, georgia, serif;
+                font-weight: normal;
+                text-transform: uppercase;
+                letter-spacing: 7px;
+                font-size: 30px;
+                text-align: center;
+                color: red;
+            }
+            #link_antimage h1 {
+                margin: 0;
+                padding: 8px 0;
+                font-family: KoreanFont, georgia, serif;
+                font-weight: normal;
+                text-transform: uppercase;
+                letter-spacing: 7px;
+                font-size: 30px;
+                text-align: center;
+                color: red;
+            }
+            #link_drow_ranger h1 {
+                margin: 0;
+                padding: 8px 0;
+                font-family: KoreanFont, georgia, serif;
+                font-weight: normal;
+                text-transform: uppercase;
+                letter-spacing: 7px;
+                font-size: 30px;
+                text-align: center;
+                color: red;
+            }
+            #link_phantom_lancer h1 {
+                margin: 0;
+                padding: 8px 0;
+                font-family: KoreanFont, georgia, serif;
+                font-weight: normal;
+                text-transform: uppercase;
+                letter-spacing: 7px;
+                font-size: 30px;
+                text-align: center;
+                color: red;
+            }
+            #link_juggernaut h1 {
+                margin: 0;
+                padding: 8px 0;
+                font-family: KoreanFont, georgia, serif;
+                font-weight: normal;
+                text-transform: uppercase;
+                letter-spacing: 7px;
+                font-size: 30px;
+                text-align: center;
+                color: red;
+            }
+            #link_mirana h1 {
+                margin: 0;
+                padding: 8px 0;
+                font-family: KoreanFont, georgia, serif;
+                font-weight: normal;
+                text-transform: uppercase;
+                letter-spacing: 7px;
+                font-size: 30px;
+                text-align: center;
+                color: red;
+            }
+            #link_morphling h1 {
+                margin: 0;
+                padding: 8px 0;
+                font-family: KoreanFont, georgia, serif;
+                font-weight: normal;
+                text-transform: uppercase;
+                letter-spacing: 7px;
+                font-size: 30px;
+                text-align: center;
+                color: red;
+            }
+            #link_vengefulspirit h1 {
+                margin: 0;
+                padding: 8px 0;
+                font-family: KoreanFont, georgia, serif;
+                font-weight: normal;
+                text-transform: uppercase;
+                letter-spacing: 7px;
+                font-size: 30px;
+                text-align: center;
+                color: red;
+            }
+            #link_riki h1 {
+                margin: 0;
+                padding: 8px 0;
+                font-family: KoreanFont, georgia, serif;
+                font-weight: normal;
+                text-transform: uppercase;
+                letter-spacing: 7px;
+                font-size: 30px;
+                text-align: center;
+                color: red;
+            }
+            #link_crystal_maiden h1 {
+                margin: 0;
+                padding: 8px 0;
+                font-family: KoreanFont, georgia, serif;
+                font-weight: normal;
+                text-transform: uppercase;
+                letter-spacing: 7px;
+                font-size: 30px;
+                text-align: center;
+                color: red;
+            }
+            #link_puck h1 {
+                margin: 0;
+                padding: 8px 0;
+                font-family: KoreanFont, georgia, serif;
+                font-weight: normal;
+                text-transform: uppercase;
+                letter-spacing: 7px;
+                font-size: 30px;
+                text-align: center;
+                color: red;
+            }
+            #link_storm_spirit h1 {
+                margin: 0;
+                padding: 8px 0;
+                font-family: KoreanFont, georgia, serif;
+                font-weight: normal;
+                text-transform: uppercase;
+                letter-spacing: 7px;
+                font-size: 30px;
+                text-align: center;
+                color: red;
+            }
+            #link_windrunner h1 {
+                margin: 0;
+                padding: 8px 0;
+                font-family: KoreanFont, georgia, serif;
+                font-weight: normal;
+                text-transform: uppercase;
+                letter-spacing: 7px;
+                font-size: 30px;
+                text-align: center;
+                color: red;
+            }
+            #link_zuus h1 {
+                margin: 0;
+                padding: 8px 0;
+                font-family: KoreanFont, georgia, serif;
+                font-weight: normal;
+                text-transform: uppercase;
+                letter-spacing: 7px;
+                font-size: 30px;
+                text-align: center;
+                color: red;
+            }
+            #link_lina h1 {
+                margin: 0;
+                padding: 8px 0;
+                font-family: KoreanFont, georgia, serif;
+                font-weight: normal;
+                text-transform: uppercase;
+                letter-spacing: 7px;
+                font-size: 30px;
+                text-align: center;
+                color: red;
+            }
+            #link_shadow_shaman h1 {
+                margin: 0;
+                padding: 8px 0;
+                font-family: KoreanFont, georgia, serif;
+                font-weight: normal;
+                text-transform: uppercase;
+                letter-spacing: 7px;
+                font-size: 30px;
+                text-align: center;
+                color: red;
+            }
+            #link_tinker h1 {
+                margin: 0;
+                padding: 8px 0;
+                font-family: KoreanFont, georgia, serif;
+                font-weight: normal;
+                text-transform: uppercase;
+                letter-spacing: 7px;
+                font-size: 30px;
+                text-align: center;
+                color: red;
+            }
+            ul#main_menu {
+                float: right;
+            }
+            ul#main_menu li {
+                float: left;
+            }
+            ul#main_menu li a{
+                padding: 1px 25px;
+                text-decoration: none;
+                color:#99FFFF;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="header">
+                <a href="Dota2.html" id="logo">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEUAAACnej3aAAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC">
+                </a>
+                <a href="Dota2.html" id="logo">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEUAAACnej3aAAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC">
+                </a>
+                <a href="Dota2.html" id="logo">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEUAAACnej3aAAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC">
+                </a>
+                <a href="Dota2.html" id="logo">
+                    <img src="http://cdn.dota2.com/apps/dota2/images/international2019/global/dota_logo.png">
+                </a>
+                <ul id="main_menu">
+                    <li><a href="Dota2.html">HOME</a></li>
+                    <li><a href="heros.html">HEROS</a></li>
+                    <li><a href="updates.html">UPDATES</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="tips.html">TIPS</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEUAAACnej3aAAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC" /></li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+            <div id="wp_content">
+                <br /><br /><br /><br /><br />
+                <div id="columnHeader"><span id="columnHeaderTextStr"></span></div>
+                    <div class="heroIcons">
+                            <a id="Hero_Name" class="heroPickerIconLink" /><h2>Earth Shaker</h2>
+                            <img id="hover_earthshaker" class="heroHoverLarge" style="display:none;" src="http://cdn.dota2.com/apps/dota2/images/heroes/earthshaker_hphover.png?v=5205887" />
+                            <img id="base_earthshaker" class="heroHoverSmall" src="http://cdn.dota2.com/apps/dota2/images/heroes/earthshaker_sb.png?v=5205887" />
+                            <h3>BIO</h3>
+                            <p> Like a golem or gargoyle, Earthshaker was one with the earth but now walks freely upon it. Unlike those other entities, he created himself through an act of will, and serves no other master. In restless slumbers, encased in a deep seam of stone, he became aware of the life drifting freely above him. He grew curious. During a season of tremors, the peaks of Nishai shook themselves loose of avalanches, shifting the course of rivers and turning shallow valleys into bottomless chasms. When the land finally ceased quaking, Earthshaker stepped from the settling dust, tossing aside massive boulders as if throwing off a light blanket. He had shaped himself in the image of a mortal beast, and named himself Raigor Stonehoof. He bleeds now, and breathes, and therefore he can die. But his spirit is still that of the earth; he carries its power in the magical totem that never leaves him. And on the day he returns to dust, the earth will greet him as a prodigal son.</p>
+                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="earthshaker_fissure" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/earthshaker_fissure_hp1.png?v=5205887" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h4>Fissure</h4>
+                            <p>Slams the ground with a mighty totem, creating an impassable ridge of stone while stunning and damaging enemy units along its line.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="earthshaker_enchant_totem" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/earthshaker_enchant_totem_hp1.png?v=5205887" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h4>Enchant Totem</h4>
+                            <p>Empowers Earthshaker's totem, causing it to deal extra damage on the next attack.Upgradable by Aghanim's Scepter.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="earthshaker_aftershock" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/earthshaker_aftershock_hp1.png?v=5205887" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h4>Aftershock</h4>
+                            <p>Causes the earth to shake underfoot, adding additional damage and stuns to nearby enemy units when Earthshaker casts his abilities.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="earthshaker_echo_slam" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/earthshaker_echo_slam_hp1.png?v=5205887" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h4>Echo Slam</h4>
+                            <p>Shockwaves travel through the ground, damaging enemy units.  Each enemy hit causes an echo to damage nearby units. Real heroes cause two echoes.</p>
+                        </div></br></br>
+                        </a>
+                        
+                        
+                                                                    <a id="link_sven" class="heroPickerIconLink" /><h1>Sven</h1>
+                            <img id="hover_sven" class="heroHoverLarge" style="display:none;" src="http://cdn.dota2.com/apps/dota2/images/heroes/sven_hphover.png?v=5205887" />
+                            <img id="base_sven" class="heroHoverSmall" src="http://cdn.dota2.com/apps/dota2/images/heroes/sven_sb.png?v=5205887" />
+                            <h3>BIO</h3>
+                            <p> Sven is the bastard son of a Vigil Knight, born of a Pallid Meranth, raised in the Shadeshore Ruins. With his father executed for violating the Vigil Codex, and his mother shunned by her wild race, Sven believes that honor is to be found in no social order, but only in himself. After tending his mother through a lingering death, he offered himself as a novice to the Vigil Knights, never revealing his identity. For thirteen years he studied in his father's school, mastering the rigid code that declared his existence an abomination. Then, on the day that should have been his In-Swearing, he seized the Outcast Blade, shattered the Sacred Helm, and burned the Codex in the Vigil's Holy Flame. He strode from Vigil Keep, forever solitary, following his private code to the last strict rune. Still a knight, yes...but a Rogue Knight. He answers only to himself.</p>
+                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="sven_storm_bolt" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/sven_storm_bolt_hp1.png?v=5205887" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Storm Hammer</h2>
+                            <p>Sven unleashes his magical gauntlet that deals damage and stuns enemy units.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="sven_great_cleave" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/sven_great_cleave_hp1.png?v=5205887" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Great Cleave</h2>
+                            <p>Sven strikes with great force, cleaving all nearby enemy units with his attack.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="sven_warcry" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/sven_warcry_hp1.png?v=5205887" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Warcry</h2>
+                            <p>Sven's Warcry heartens his allied heroes for battle, increasing their movement speed and provides them with an attack damage shield. Buff ends if the shield is consumed. Shield health grows based on Sven's strength.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="sven_gods_strength" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/sven_gods_strength_hp1.png?v=5205887" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>God's Strength</h2>
+                            <p>Sven channels his rogue strength, granting bonus damage for 25 seconds.Upgradable by Aghanim's Scepter.</p>
+                        </div></br></br>
+                        </a>
+                        
+
+                                                    <a id="link_tiny" class="heroPickerIconLink" /><h1>Tiny</h1>
+                            <img id="hover_tiny" class="heroHoverLarge" style="display:none;" src="http://cdn.dota2.com/apps/dota2/images/heroes/tiny_hphover.png?v=5205887" />
+                            <img id="base_tiny" class="heroHoverSmall" src="http://cdn.dota2.com/apps/dota2/images/heroes/tiny_sb.png?v=5205887" />
+                            <h3>BIO</h3>
+                            <p>Coming to life as a chunk of stone, Tiny's origins are a mystery on which he continually speculates. He is a Stone Giant now, but what did he used to be? A splinter broken from a Golem's heel? A shard swept from a gargoyle-sculptor's workshop? A fragment of the Oracular Visage of Garthos? A deep curiosity drives him, and he travels the world tirelessly seeking his origins, his parentage, his people. As he roams, he gathers weight and size; the forces that weather lesser rocks, instead cause Tiny to grow and ever grow.</p>
+                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="tiny_avalanche" class="overviewAbilityImg abilityIconWithTooltip" src="http://cdn.dota2.com/apps/dota2/images/abilities/tiny_avalanche_hp1.png?v=5205887" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Avalanche</h2>
+                            <p>Bombards an area with rocks, continously doing small intervals of damage and stun to enemy units. Avalanche does 3x damage to units being tossed.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="tiny_toss" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/tiny_toss_hp1.png?v=5205887" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Toss</h2>
+                            <p>Grabs the nearest unit in a 275 radius around Tiny, ally or enemy, and launches it at the target unit or rune to deal damage where they land.  If the tossed unit is an enemy, it will take an extra 30% damage.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="tiny_craggy_exterior" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/tiny_craggy_exterior_hp1.png?v=5205887" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Tree Grab</h2>
+                            <p>Grabs a tree to whack enemies on the head for a limited number of times. Grants bonus attack range. Attacks deal more damage (increased vs. buildings) and fully splash on units along the way. The tree can be thrown, expending all the charges, to deal your attack to a unit at a distance.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="tiny_grow" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/tiny_grow_hp1.png?v=5205887" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Grow</h2>
+                            <p>Tiny gains craggy mass, increases his power and causes him to shrug off debuffs.</p>
+                        </div></br></br>
+                        </a>
+                        
+                        
+                                                                    <a id="link_kunkka" class="heroPickerIconLink" /><h1>Kunkka</h1>
+                            <img id="hover_kunkka" class="heroHoverLarge" style="display:none;" src="http://cdn.dota2.com/apps/dota2/images/heroes/kunkka_hphover.png?v=5205887" />
+                            <img id="base_kunkka" class="heroHoverSmall" src="http://cdn.dota2.com/apps/dota2/images/heroes/kunkka_sb.png?v=5205887" />
+                            <h3>BIO</h3>
+                            <p>As The Admiral of the mighty Claddish Navy, Kunkka was charged with protecting the isles of his homeland when the demons of the Cataract made a concerted grab at the lands of men. After years of small sorties, and increasingly bold and devastating attacks, the demon fleet flung all its carnivorous ships at the Trembling Isle. Desperate, the Suicide-Mages of Cladd committed their ultimate rite, summoning a host of ancestral spirits to protect the fleet. Against the demons, this was just barely enough to turn the tide. As Kunkka watched the demons take his ships down one by one, he had the satisfaction of wearing away their fleet with his ancestral magic. But at the battle's peak, something in the clash of demons, men and atavistic spirits must have stirred a fourth power that had been slumbering in the depths. The waves rose up in towering spouts around the few remaining ships, and Maelrawn the Tentacular appeared amid the fray. His tendrils wove among the ships, drawing demon and human craft together, churning the water and wind into a raging chaos. What happened in the crucible of that storm, none may truly say. The Cataract roars off into the void, deserted by its former denizens. Kunkka is now The Admiral of but one ship, a ghostly rig which endlessly replays the final seconds of its destruction. Whether he died in that crash is anyone's guess. Not even Tidehunter, who summoned Maelrawn, knows for sure.</p>
+                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="kunkka_torrent" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/kunkka_torrent_hp1.png?v=5205887" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Torrent</h2>
+                            <p>Summons a rising torrent that, after a short delay, hurls enemy units into the sky, stunning, dealing damage and slowing movement speed.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="kunkka_tidebringer" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/kunkka_tidebringer_hp1.png?v=5205887" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Tidebringer</h2>
+                            <p>Kunkka's legendary sword grants increased damage and cleaves a large area of effect in front of him for a single strike.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="kunkka_x_marks_the_spot" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/kunkka_x_marks_the_spot_hp1.png?v=5205887" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>X Marks the Spot</h2>
+                            <p>Targets a friendly or enemy Hero, marks their position with an X, and returns them to it after several seconds.  Kunkka can trigger the return at any time during the duration. Lasts twice as long on allied heroes.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="kunkka_ghostship" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/kunkka_ghostship_hp1.png?v=5205887" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Ghostship</h2>
+                            <p>Summons a ghostly ship that sails through the battle before smashing apart, damaging and stunning all enemies caught near the wreckage. Allied heroes touched by the Ghostship are given a swig of The Admiral's Rum, receiving bonus movement speed and a delayed reaction to incoming damage.Upgradeable by Aghanim's Scepter.</p>
+                        </div></br></br>
+                        </a>
+                        
+                        
+                                        <a id="link_beastmaster" class="heroPickerIconLink" /><h1>Beastmaster</h1>
+                            <img id="hover_beastmaster" class="heroHoverLarge" style="display:none;" src="http://cdn.dota2.com/apps/dota2/images/heroes/beastmaster_hphover.png?v=5205887" />
+                            <img id="base_beastmaster" class="heroHoverSmall" src="http://cdn.dota2.com/apps/dota2/images/heroes/beastmaster_sb.png?v=5205887" />
+                            <h3>BIO</h3>
+                            <p>Karroch was born a child of the stocks. His mother died in childbirth; his father, a farrier for the Last King of Slom, was trampled to death when he was five. Afterward Karroch was indentured to the king's menagerie, where he grew up among all the beasts of the royal court: lions, apes, fell-deer, and things less known, things barely believed in. When the lad was seven, an explorer brought in a beast like none before seen. Dragged before the King in chains, the beast spoke, though its mouth moved not. Its words: a plea for freedom. The King only laughed and ordered the beast perform for his amusement; and when it refused, struck it with the Mad Scepter and ordered it dragged to the stocks. Over the coming months, the boy Karroch sneaked food and medicinal draughts to the wounded creature, but only managed to slow its deterioration. Wordlessly, the beast spoke to the boy, and over time their bond strengthened until the boy found he could hold up his end of a conversation. He could, in fact, speak now to all the creatures of the King's menagerie. On the night the beast died, a rage came over the boy. He incited the animals of the court to rebel and threw open their cages to set them amok on the palace grounds. The Last King was mauled in the mayhem. In the chaos, one regal stag bowed to the boy who had freed him; and with Beastmaster astride him, leapt the high walls of the estate, and escaped. Now a man, Karroch the Beastmaster has not lost his ability to converse with wild creatures. He has grown into a warrior at one with nature's savagery.</p>
+                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="beastmaster_wild_axes" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/beastmaster_wild_axes_hp1.png?v=5205887" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Wild Axes</h2>
+                            <p>Beastmaster sends his axes flying and calls them home again, slicing through enemy units and trees along their path.  Each axe can hit an enemy once, and amplifies subsequent damage from Beastmaster and his units.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                                                            <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="beastmaster_call_of_the_wild_hawk" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/beastmaster_call_of_the_wild_hawk_hp1.png?v=5205887" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Call of the Wild Hawk</h2>
+                            <p>Beastmaster sends an invisible Hawk to scout an area.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="beastmaster_inner_beast" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/beastmaster_inner_beast_hp1.png?v=5205887" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Inner Beast</h2>
+                            <p>Untaps the inner fury of allies, passively increasing their attack speed.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                                                            <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="beastmaster_primal_roar" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/beastmaster_primal_roar_hp1.png?v=5205887" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Primal Roar</h2>
+                            <p>Beastmaster lets loose a deafening roar that stuns, and shoves open a path to its target. All units in the path of the roar are damaged, while units shoved aside by the roar have their movement and attack speed slowed. Additionally, Beastmaster and his units gain 40% movement speed for 3 seconds.Upgradable by Aghanim's Scepter.</p>
+                        </div></br></br>
+                        </a>
+                        
+                        
+                                                                    <a id="link_dragon_knight" class="heroPickerIconLink" /><h1>Dragon Knight</h1>
+                            <img id="hover_dragon_knight" class="heroHoverLarge" style="display:none;" src="http://cdn.dota2.com/apps/dota2/images/heroes/dragon_knight_hphover.png?v=5205887" />
+                            <img id="base_dragon_knight" class="heroHoverSmall" src="http://cdn.dota2.com/apps/dota2/images/heroes/dragon_knight_sb.png?v=5205887" />
+                            <h3>BIO</h3>
+                            <p>After years on the trail of a legendary Eldwurm, the Knight Davion found himself facing a disappointing foe: the dreaded Slyrak had grown ancient and frail, its wings tattered, its few remaining scales stricken with scale-rot, its fangs ground to nubs, and its fire-gouts no more threatening than a pack of wet matchsticks. Seeing no honor to be gained in dragon-murder, Knight Davion prepared to turn away and leave his old foe to die in peace. But a voice crept into his thoughts, and Slyrak gave a whispered plea that Davion might honor him with death in combat. Davion agreed, and found himself rewarded beyond expectation for his act of mercy: As he sank his blade in Slyrak's breast, the dragon pierced Davion's throat with a talon. As their blood mingled, Slyrak sent his power out along the Blood Route, sending all its strength and centuries of wisdom to the knight. The dragon's death sealed their bond and Dragon Knight was born. The ancient power slumbers in the Dragon Knight Davion, waking when he calls it. Or perhaps it is the Dragon that calls the Knight.</p>
+                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="dragon_knight_breathe_fire" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/dragon_knight_breathe_fire_hp1.png?v=5205887" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Breathe Fire</h2>
+                            <p>Unleashes a breath of fire in front of Dragon Knight that burns enemies and reduces the damage their attacks deal.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="dragon_knight_dragon_tail" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/dragon_knight_dragon_tail_hp1.png?v=5205887" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Dragon Tail</h2>
+                            <p>Dragon Knight smites an enemy unit in melee range with his shield, stunning it while dealing minor damage.  When in Elder Dragon Form, the cast range increases to 400.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="dragon_knight_dragon_blood" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/dragon_knight_dragon_blood_hp1.png?v=5205887" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Dragon Blood</h2>
+                            <p>The life blood of the Dragon improves health regeneration and strengthens armor.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="dragon_knight_elder_dragon_form" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/dragon_knight_elder_dragon_form_hp1.png?v=5205887" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Elder Dragon Form</h2>
+                            <p>Dragon Knight takes the form of one of three powerful elder dragons, increasing his speed, and Dragon Tail's range, while granting him new powers.
+                            <font color="#9acd32">LEVEL 1 Green Dragon</font> - Corrosive Breath: attacks deal 20 poison damage per second for 5 seconds. Works on structures.
+                            <font color="#ff0000">LEVEL 2 Red Dragon</font> - Splash Attack: attacks damage all enemy units in a 300 radius for %splash_damage_percent%% damage, with Corrosive Breath added to the targets.
+                            <font color="#87ceeb">LEVEL 3 Blue Dragon</font> - Frost Breath: slows movement speed by 30% and attack speed by 30 of enemy units in Splash Attack range for 3 seconds, with Corrosive Breath added to the targets.</p>
+                        </div></br></br>
+                        </a>
+                                                                    <a id="link_rattletrap" class="heroPickerIconLink" /><h1>Clockwerk</h1>
+                            <img id="hover_rattletrap" class="heroHoverLarge" style="display:none;" src="http://cdn.dota2.com/apps/dota2/images/heroes/rattletrap_hphover.png?v=5205887" />
+                            <img id="base_rattletrap" class="heroHoverSmall" src="http://cdn.dota2.com/apps/dota2/images/heroes/rattletrap_sb.png?v=5205887" />
+                            <h3>BIO</h3>
+                            <p>Rattletrap descends from the same far-flung kindred as Sniper and Tinker, and like many of the Keen Folk, has offset his diminutive stature through the application of gadgetry and wit. The son of the son of a clockmaker, Rattletrap was many years apprenticed to that trade before war rode down from the mountains and swept the plains villages free of such innocent vocations. "Your new trade is battle," his dying father told him as the village of their ancestors lay in charred and smoking ruins.  It is a poor tradesman who blames his tools, and Rattletrap was never one to make excuses. After burying his father among the ruins of their village, he set about to transform himself into the greatest tool of warfare that any world had ever seen. He vowed to never again be caught unprepared, instead using his talents to assemble a suit of powered Clockwerk armor to make the knights of other lands look like tin cans by comparison. Now Rattletrap is alive with devices, a small but deadly warrior whose skills at ambush and destruction have risen to near-automated levels of efficiency. An artisan of death, his mechanizations make short work of the unwary, heralding a new dawn in this age of warfare. What time is it? It's Clockwerk time!</p>
+                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="rattletrap_battery_assault" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/rattletrap_battery_assault_hp1.png?v=5205887" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Battery Assault</h2>
+                            <p>Discharges high-powered shrapnel at random nearby enemy units, dealing minor magical damage and ministun.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="rattletrap_power_cogs" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/rattletrap_power_cogs_hp1.png?v=5205887" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Power Cogs</h2>
+                            <p>Forms a barrier of energized cogs around Clockwerk, trapping any units that are near.  Enemies outside the trap that touch a cog are knocked back, losing health and mana. Once a cog has delivered a shock, it will power down.  Cogs can be destroyed by enemy attacks, but Clockwerk can destroy them with just one.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="rattletrap_rocket_flare" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/rattletrap_rocket_flare_hp1.png?v=5205887" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Rocket Flare</h2>
+                            <p>Fires a global range flare that explodes over a given area, damaging enemies and providing vision for 10 seconds.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="rattletrap_hookshot" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/rattletrap_hookshot_hp1.png?v=5205887" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Hookshot</h2>
+                            <p>Fires a grappling device rapidly at the target location.  If the hook hits a unit, Clockwerk launches himself into the target, stunning and dealing damage.  Any enemies Clockwerk collides with along the way are damaged and stunned.Upgradable by Aghanim's Scepter.</p>
+                        </div></br></br>
+                        </a>
+                                                                    <a id="link_omniknight" class="heroPickerIconLink" /><h1>Omniknight</h1>
+                            <img id="hover_omniknight" class="heroHoverLarge" style="display:none;" src="http://cdn.dota2.com/apps/dota2/images/heroes/omniknight_hphover.png?v=5205887" />
+                            <img id="base_omniknight" class="heroHoverSmall" src="http://cdn.dota2.com/apps/dota2/images/heroes/omniknight_sb.png?v=5205887" />
+                            <h3>BIO</h3>
+                            <p>Purist Thunderwrath was a hard-fighting, road-worn, deeply committed knight, sworn to the order in which he had grown up as squire to elder knights of great reputation. He had spent his entire life in the service of the Omniscience, the All Seeing One. Theirs was a holy struggle, and so embedded was he in his duty that he never questioned it so long as he had the strength to fight and the impetuous valor that comes with youth. But over the long years of the crusade, as his elders passed away and were buried in sorry graves at the side of muddy tracks, as his bond-brothers fell in battle to uncouth creatures that refused to bow to the Omniscience, as his own squires were chewed away by ambush and plague and bad water, he began to question the meaning of his vows--the meaning of the whole crusade. After deep meditation, he parted ways with his army and commenced a long trek back to the cave-riddled cliffs of Emauracus, and there he set a challenge to the priests of the Omniscience. No knight had ever questioned them before, and they tried to throw him into the pit of sacrifice, but Purist would not be moved. For as he faced them down, he began to glow with a holy light, and they saw that the Omniscience had chosen to reveal Itself to him. The Elder Hierophant led him on a journey of weeks down into the deepest chamber, the holy of holies, where waited not some abstract concept of wisdom and insight, not some carved relic requiring an injection of imagination to believe in, but the old one itself. It had not merely dwelt in those rocks for billions of aeons; no, It had created them. The Omniscience had formed the immense mineral shell of the planet around itself, as a defense against the numerous terrors of space. Thus the All Seeing One claimed to have created the world, and given the other truths revealed to Purist on that day, the knight had no reason to refute the story. Perhaps the Omniscience is a liar, deep in its prison of stone, and not the world's creator at all, but Omniknight never again questioned his faith. His campaign had meaning at last. And there can be no question that the glorious powers that imbue him, and give his companions such strength in battle, are real beyond any doubt.</p>
+                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="omniknight_purification" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/omniknight_purification_hp1.png?v=5205887" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Purification</h2>
+                            <p>Instantly heals a friendly unit and damages all nearby enemy units.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="omniknight_repel" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/omniknight_repel_hp1.png?v=5205887" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Heavenly Grace</h2>
+                            <p>Creates a divine barrier around an ally which grants them increased Status Resistance, Strength and Health Regeneration.DISPEL TYPE: Strong Dispel</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="omniknight_degen_aura" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/omniknight_degen_aura_hp1.png?v=5205887" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Degen Aura</h2>
+                            <p>Greatly degenerates the movement and attack capabilities of enemy units that stray too near.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="omniknight_guardian_angel" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/omniknight_guardian_angel_hp1.png?v=5205887" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Guardian Angel</h2>
+                            <p>Omniknight summons a Guardian Angel that grants immunity from physical damage.Upgradable by Aghanim's Scepter</p>
+                        </div></br></br>
+                        </a>
+                                                                </div>
+                    <br clear="left" />
+                </div>
+                <div class="heroColLeft" style="clear:left">
+                    <div class="heroIcons">
+                                                                    <a id="link_axe" class="heroPickerIconLink" /><h1>Axe</h1>
+                            <img id="hover_axe" class="heroHoverLarge" style="display:none;" src="http://cdn.dota2.com/apps/dota2/images/heroes/axe_hphover.png?v=5205887" />
+                            <img id="base_axe" class="heroHoverSmall" src="http://cdn.dota2.com/apps/dota2/images/heroes/axe_sb.png?v=5205887" />
+                            <h3>BIO</h3>
+                            <p> As a grunt in the Army of Red Mist, Mogul Khan set his sights on the rank of Red Mist General. In battle after battle he proved his worth through gory deed. His rise through the ranks was helped by the fact that he never hesitated to decapitate a superior. Through the seven year Campaign of the Thousand Tarns, he distinguished himself in glorious carnage, his star of fame shining ever brighter, while the number of comrades in arms steadily dwindled. On the night of ultimate victory, Axe declared himself the new Red Mist General, and took on the ultimate title of 'Axe.' But his troops now numbered zero. Of course, many had died in battle, but a significant number had also fallen to Axe's blade. Needless to say, most soldiers now shun his leadership. But this matters not a whit to Axe, who knows that a one-man army is by far the best.</p>
+                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="axe_berserkers_call" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/axe_berserkers_call_hp1.png?v=5205887" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Berserker's Call</h2>
+                            <p>Axe taunts nearby enemy units, forcing them to attack him, while he gains bonus armor during the duration.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="axe_battle_hunger" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/axe_battle_hunger_hp1.png?v=5205887" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Battle Hunger</h2>
+                            <p>Enrages an enemy unit, causing it to be slowed and take damage over time until it kills another unit or the duration ends. Axe gains movement speed for each unit affected with Battle Hunger.Upgradable by Aghanim's Scepter.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="axe_counter_helix" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/axe_counter_helix_hp1.png?v=5205887" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Counter Helix</h2>
+                            <p>When attacked, Axe performs a helix counter attack, dealing pure damage to all nearby enemies.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="axe_culling_blade" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/axe_culling_blade_hp1.png?v=5205887" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Culling Blade</h2>
+                            <p>Axe spots a weakness and strikes, instantly killing an enemy unit with low health, or dealing moderate damage otherwise. When an enemy hero is killed with Culling Blade, its cooldown is reset, and Axe and nearby allied units gain bonus movement speed.</p>
+                        </div>
+                        </a>
+                                                                </div>
+                    <br clear="left" />
+                </div>
+                <div class="heroColMiddle">
+                    <div id="columnHeader"><span id="columnHeaderTextAgi">Agility</span></div>
+                    <div class="heroIcons">
+                                                                    <a id="link_antimage" class="heroPickerIconLink" /><h1>Anti Mage</h1>
+                            <img id="hover_antimage" class="heroHoverLarge" style="display:none;" src="http://cdn.dota2.com/apps/dota2/images/heroes/antimage_hphover.png?v=5205887" />
+                            <img id="base_antimage" class="heroHoverSmall" src="http://cdn.dota2.com/apps/dota2/images/heroes/antimage_sb.png?v=5205887" />
+                            <h3>BIO</h3>
+                            <p>The monks of Turstarkuri watched the rugged valleys below their mountain monastery as wave after wave of invaders swept through the lower kingdoms. Ascetic and pragmatic, in their remote monastic eyrie they remained aloof from mundane strife, wrapped in meditation that knew no gods or elements of magic. Then came the Legion of the Dead God, crusaders with a sinister mandate to replace all local worship with their Unliving Lord's poisonous nihilosophy. From a landscape that had known nothing but blood and battle for a thousand years, they tore the souls and bones of countless fallen legions and pitched them against Turstarkuri. The monastery stood scarcely a fortnight against the assault, and the few monks who bothered to surface from their meditations believed the invaders were but demonic visions sent to distract them from meditation. They died where they sat on their silken cushions. Only one youth survived--a pilgrim who had come as an acolyte, seeking wisdom, but had yet to be admitted to the monastery. He watched in horror as the monks to whom he had served tea and nettles were first slaughtered, then raised to join the ranks of the Dead God's priesthood. With nothing but a few of Turstarkuri's prized dogmatic scrolls, he crept away to the comparative safety of other lands, swearing to obliterate not only the Dead God's magic users--but to put an end to magic altogether.</p>
+                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="antimage_mana_break" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/antimage_mana_break_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Mana Break</h2>
+                            <p>Burns an opponent's mana on each attack.  Mana Break deals 50% of the mana burned as damage to the target.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="antimage_blink" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/antimage_blink_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Blink</h2>
+                            <p>Short distance teleportation that allows Anti-Mage to move in and out of combat.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="antimage_counterspell" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/antimage_counterspell_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Counterspell</h2>
+                            <p>Passively grants you magic resistance. Can be activated to create an anti-magic shell around you that sends any targeted spells back towards enemies instead of affecting you.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="antimage_mana_void" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/antimage_mana_void_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Mana Void</h2>
+                            <p>For each point of mana missing by the target unit, damage is dealt to it and surrounding enemies.  The main target is also mini-stunned.</p>
+                        </div></br></br>
+                        </a>
+                        
+                        
+                                                                    <a id="link_drow_ranger" class="heroPickerIconLink" /><h2>Drow Ranger</h2>
+                            <img id="hover_drow_ranger" class="heroHoverLarge" style="display:none;" src="http://cdn.dota2.com/apps/dota2/images/heroes/drow_ranger_hphover.png?v=5205887" />
+                            <img id="base_drow_ranger" class="heroHoverSmall" src="http://cdn.dota2.com/apps/dota2/images/heroes/drow_ranger_sb.png?v=5205887" />
+                            <h3>BIO</h3>
+                            <p>Drow Ranger's given name is Traxex--a name well suited to the short, trollish, rather repulsive Drow people. But Traxex herself is not a Drow. Her parents were travelers in a caravan set upon by bandits, whose noisy slaughter of innocents roused the ire of the quiet Drow people. After the battle settled, the Drow discovered a small girl-child hiding in the ruined wagons, and agreed she could not be abandoned. Even as child, Traxex showed herself naturally adept at the arts they prized: Stealth, silence, subtlety. In spirit, if not in physique, she might have been a Drow changeling, returned to her proper home. But as she grew, she towered above her family and came to think of herself as ugly. After all, her features were smooth and symmetrical, entirely devoid of warts and coarse whiskers. Estranged from her adopted tribe, she withdrew to live alone in the woods. Lost travelers who find their way from the forest sometimes speak of an impossibly beautiful Ranger who peered at them from deep among the trees, then vanished like a dream before they could approach. Lithe and stealthy, icy hot, she moves like mist in silence. That whispering you hear is her frozen arrows finding an enemy's heart.</p>
+                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="drow_ranger_frost_arrows" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/drow_ranger_frost_arrows_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Frost Arrows</h2>
+                            <p>Adds a freezing effect to Drow's attacks, slowing enemy movement.  Lasts 1.5 seconds on Heroes, and 7 seconds on creeps.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="drow_ranger_wave_of_silence" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/drow_ranger_wave_of_silence_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Gust</h2>
+                            <p>Releases a wave that silences and knocks back enemy units. Knockback distance is relative to how close they are to you.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="drow_ranger_trueshot" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/drow_ranger_trueshot_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Precision Aura</h2>
+                            <p>Adds bonus attack speed to allied, ranged Hero units based on a percentage of Drow's agility.  Affects creeps for 30 seconds when cast.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="drow_ranger_marksmanship" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/drow_ranger_marksmanship_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Marksmanship</h2>
+                            <p>Drow's experiences in battle grant her a chance to launch arrows with incredible accuracy and effectiveness. Pierces through the enemy's defenses, ignoring their armor entirely. Instantly kills creeps and deals bonus proc physical damage to heroes. This ability is disabled if there is an enemy hero within 400 range. Upgradable by Aghanim's Scepter.</p>
+                        </div></br></br>
+                        </a>
+                        
+                        
+                                                                    <a id="link_juggernaut" class="heroPickerIconLink" /><h1>Juggernaut</h1>
+                            <img id="hover_juggernaut" class="heroHoverLarge" style="display:none;" src="http://cdn.dota2.com/apps/dota2/images/heroes/juggernaut_hphover.png?v=5205887" />
+                            <img id="base_juggernaut" class="heroHoverSmall" src="http://cdn.dota2.com/apps/dota2/images/heroes/juggernaut_sb.png?v=5205887" />
+                            <h3>BIO</h3>
+                            <p>No one has ever seen the face hidden beneath the mask of Yurnero the Juggernaut. It is only speculation that he even has one. For defying a corrupt lord, Yurnero was exiled from the ancient Isle of Masks--a punishment that saved his life. The isle soon after vanished beneath the waves in a night of vengeful magic. He alone remains to carry on the Isle's long Juggernaut tradition, one of ritual and swordplay. The last practitioner of the art, Yurnero's confidence and courage are the result of endless practice; his inventive bladework proves that he has never stopped challenging himself. Still, his motives are as unreadable as his expression. For a hero who has lost everything twice over, he fights as if victory is a foregone conclusion.</p>
+                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="juggernaut_blade_fury" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/juggernaut_blade_fury_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Blade Fury</h2>
+                            <p>Causes a bladestorm of destructive force around Juggernaut, rendering him immune to magic and dealing damage to nearby enemy units. DISPEL TYPE: Basic Dispel</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="juggernaut_healing_ward" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/juggernaut_healing_ward_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Healing Ward</h2>
+                            <p>Summons a Healing Ward which heals all nearby allied units, based on their max health.  The Healing Ward moves at 350 movement speed after being summoned.  Lasts 25 seconds.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="juggernaut_blade_dance" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/juggernaut_blade_dance_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Blade Dance</h2>
+                            <p>Gives Juggernaut a chance to deal critical damage on each attack.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="juggernaut_omni_slash" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/juggernaut_omni_slash_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Omnislash</h2>
+                            <p>Juggernaut leaps towards the target enemy unit with an attack, and then slashes other nearby enemy units at an increased attack rate. Juggernaut is invulnerable for the duration.Upgradable by Aghanim's Scepter.</p>
+                        </div></br></br>
+                        </a>
+                        
+                        
+                                                                    <a id="link_mirana" class="heroPickerIconLink" /><h1>Mirana</h1>
+                            <img id="hover_mirana" class="heroHoverLarge" style="display:none;" src="http://cdn.dota2.com/apps/dota2/images/heroes/mirana_hphover.png?v=5205887" />
+                            <img id="base_mirana" class="heroHoverSmall" src="http://cdn.dota2.com/apps/dota2/images/heroes/mirana_sb.png?v=5205887" />
+                            <h3>BIO</h3>
+                            <p>Born to a royal family, a blood princess next in line for the Solar Throne, Mirana willingly surrendered any claim to mundane land or titles when she dedicated herself completely to the service of Selemene, Goddess of the Moon. Known ever since as Princess of the Moon, Mirana prowls the sacred Nightsilver Woods searching for any who would dare poach the sacred luminous lotus from the silvery pools of the Goddess's preserve. Riding on her enormous feline familiar, she is poised, proud and fearless, attuned to the phases of the moon and the wheeling of the greater constellations. Her bow, tipped with sharp shards of lunar ore, draws on the moon's power to charge its arrows of light.</p>
+                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="mirana_starfall" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/mirana_starfall_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Starstorm</h2>
+                            <p>Calls down a wave of meteors to damage nearby enemy units. The closest enemy unit to Mirana in a 425 radius will be struck a second time for 75% of the damage.Upgradable by Aghanim's Scepter.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="mirana_arrow" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/mirana_arrow_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Sacred Arrow</h2>
+                            <p>Fires a long-range arrow with deadly precision, which stuns and damages the first enemy unit it strikes. The stun duration ranges from 0.01 to 5 seconds, with bonus damage up to 140 added, based on the distance the arrow travels to its target. Instantly kills the first non-ancient creep it hits.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="mirana_leap" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/mirana_leap_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Leap</h2>
+                            <p>Mirana leaps forward into battle, empowering herself with a ferocious roar that grants bonus attack and movement speed. Speed bonus lasts 2.5 seconds.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="mirana_invis" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/mirana_invis_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription"
+                            <h2>Moonlight Shadow</h2>
+                            <p>Turns Mirana and all allied heroes invisible. If a hero is revealed, invisibility will restore after the fade delay as long as Moonlight Shadow's duration has not expired.</p>
+                        </div></br></br>
+                        </a>
+                        
+                        
+                                                                    <a id="link_morphling" class="heroPickerIconLink" /><h1>Morphling</h1>
+                            <img id="hover_morphling" class="heroHoverLarge" style="display:none;" src="http://cdn.dota2.com/apps/dota2/images/heroes/morphling_hphover.png?v=5205887" />
+                            <img id="base_morphling" class="heroHoverSmall" src="http://cdn.dota2.com/apps/dota2/images/heroes/morphling_sb.png?v=5205887" />
+                            <h3>BIO</h3>
+                            <p>For dark eons the comet circled. Held in thrall to a distant sun, bound by gravity's inexorable pull, the massive ball of ice careened through the blackness between worlds, made strange by its dark journey. On the eve of the ancient war of the Vloy, it punched down through the sky and lit a glowing trail across the night, a sign both armies took for an omen. The frozen ball melted in a flash of boiling heat, as below two forces enjoined in battle across the border of a narrow river. Thus freed from its icy stasis, the Morphling was born into conflict, an elemental power at one with the tides of the ocean, capricious and unconstrained. He entered the fight, instinctively taking the form of the first general who dared set foot across the water, and then struck him dead. As the motley warriors clashed, he shifted from form to form throughout the battle, instantly absorbing the ways of these strange creatures--now a footsoldier, now an archer, now the cavalryman--until, by the time the last soldier fell, Morphling had played every part. The battle's end was his beginning.</p>
+                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="morphling_waveform" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/morphling_waveform_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Waveform</h2>
+                            <p>Morphling dissolves into liquid and surges forward, damaging enemy units in his path.  Morphling is invulnerable during Waveform.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="morphling_adaptive_strike_agi" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/morphling_adaptive_strike_agi_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Adaptive Strike (Agility)</h2>
+                            <p>Launches a surge of water toward an enemy unit, dealing base damage plus additional damage based on Morphling's agility times a multiplier.  If Morphling's agility is 50% higher than strength, the maximum damage is dealt.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="morphling_adaptive_strike_str" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/morphling_adaptive_strike_str_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Adaptive Strike (Strength)</h2>
+                            <p>Launches a surge of water toward an enemy unit, stunning and knocking back the target based on Morphling's strength. If his strength is 50% higher than his agility, the maximum stun/knockback is dealt.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="morphling_morph_agi" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/morphling_morph_agi_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Attribute Shift (Agility Gain)</h2>
+                            <p>Morphling shifts its form, pulling points from Strength and pouring them into Agility. The process is reversible.  Additional points in Attribute Shift increase the rate of stat change.  Passively grants bonus Agility.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="morphling_morph_str" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/morphling_morph_str_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Attribute Shift (Strength Gain)</h2>
+                            <p>Morphling shifts its form, pulling points from Agility and pouring them into Strength. The process is reversible.  Additional points in Attribute Shift increase the rate of stat change.  Passively grants bonus Strength.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="morphling_replicate" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/morphling_replicate_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Morph</h2>
+                            <p>Morphling changes his form to match the targeted enemy, gaining their basic abilities. Can be toggled for the duration of the ability. DISPEL TYPE: Basic Dispel</p>
+                        </div></br></br>
+                        </a>
+                        
+                        
+                                                                    <a id="link_phantom_lancer" class="heroPickerIconLink" /><h1>Phantom Lancer</h1>
+                            <img id="hover_phantom_lancer" class="heroHoverLarge" style="display:none;" src="http://cdn.dota2.com/apps/dota2/images/heroes/phantom_lancer_hphover.png?v=5205887" />
+                            <img id="base_phantom_lancer" class="heroHoverSmall" src="http://cdn.dota2.com/apps/dota2/images/heroes/phantom_lancer_sb.png?v=5205887" />
+                            <h3>BIO</h3>
+                            <p>The remote village of Pole had no knowledge of the wars raging in the heart of the kingdom. For them, the quiet of spear fishing, and a family meal were all that a full life required. Yet war came for them nonetheless. Joining the able-bodied conscripts as they filed passed their homes, the humble lancer Azwraith vowed to bring peace to his kingdom, and in so doing, his people. Placed with his kin in the vanguard of the final assault against the Dread Magus Vorn, the cost to his fellows was absolute. As the charging force battled toward the fortress, Azwraith alone among his kind remained standing, and he alone was able to infiltrate the keep. Focused and infuriated by the slaughter of his brothers, Azwraith bested each of the wizard's deadly traps and conjured guardians. Soon the simple fisherman arrived at Vorn's tower sanctum. The pair dueled through the night, pike to staff, as chaos raged below, and with a deafening cry Azwraith pierced his enemy. But the wizard did not simply expire; he exploded into uncountable shards of light, penetrating his killer with power. As the dust settled and the smoke of combat began to clear, Azwraith found himself standing among a throng of his kin. Each seemed to be dressed as he was, each seemed armed as he was, and he could sense that each thought as he did. Aware that his allies were approaching, he willed these phantoms to hide themselves, and one by one they began to vanish into nothingness. As the soldiers came upon the sanctum, they found the warrior that had bested the wizard. When they approached their champion, the lancer vanished. The pikeman who had stood before them was no more than another phantom.</p>
+                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="phantom_lancer_spirit_lance" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/phantom_lancer_spirit_lance_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Spirit Lance</h2>
+                            <p>Sends a magical spirit lance to a target enemy unit that damages and slows, while summoning an illusory phantom to attack the unit.Upgradable by Aghanim's Scepter.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="phantom_lancer_doppelwalk" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/phantom_lancer_doppelwalk_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Doppelganger</h2>
+                            <p>Phantom Lancer briefly vanishes from the battlefield. After 1 second, Phantom Lancer and any of his nearby illusions reappear at a random position within the targeted location, along with two additional doppelgangers. Extends duration of all illusions. The two added doppelgangers have different properties: one takes normal damage and deals none, while the other takes 600% damage and deals 20% damage.DISPEL TYPE: Basic Dispel</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="phantom_lancer_phantom_edge" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/phantom_lancer_phantom_edge_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Phantom Rush</h2>
+                            <p>When targetting an enemy for an attack, Phantom Lancer quickly charges into range, gaining a temporary agility boost upon reaching the target. Phantom Lancer's illusions also have this ability.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="phantom_lancer_juxtapose" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/phantom_lancer_juxtapose_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Juxtapose</h2>
+                            <p>Phantom Lancer has a chance to fracture his presence, creating an illusion of himself. Illusions also have a chance to fracture further. Illusions created from Phantom Lancer last for 8 seconds, while illusions created from other illusions last 4 seconds.</p>
+                        </div>
+                        <br clear="left" />
+                    </div></br></br>
+                        </a>
+                        
+                        
+                                                                    <a id="link_vengefulspirit" class="heroPickerIconLink" /><h1>Vengeful Spirit</h1>
+                            <img id="hover_vengefulspirit" class="heroHoverLarge" style="display:none;" src="http://cdn.dota2.com/apps/dota2/images/heroes/vengefulspirit_hphover.png?v=5205887" />
+                            <img id="base_vengefulspirit" class="heroHoverSmall" src="http://cdn.dota2.com/apps/dota2/images/heroes/vengefulspirit_sb.png?v=5205887" />
+                            <h3>BIO</h3>
+                            <p>Even the most contented Skywrath is an ill-tempered creature, naturally inclined to seek revenge for the slightest insult. But Vengeful Spirit is the essence of vengeance. Once a proud and savage Skywrath scion, Shendelzare was first in succession for the Ghastly Eyrie until a sister's treachery robbed her of her birthright. Snared in an assassin's net, Shendelzare tore free only at the cost of her wings, limping away in the ultimate humiliation: On foot. With her wings broken, she knew the Skywrath would never accept her as ruler; and in the highest roost of the Eyrie, inaccessible except by winged flight, her sister was untouchable. Unwilling to live as a flightless cripple, and desiring revenge far more than earthly power, the fallen princess drove a bargain with the goddess Scree'auk: She surrendered her broken body for an imperishable form of spirit energy, driven by vengeance, capable of doing great damage in the material plane. She may spend eternity flightless, but she will have her revenge.</p>
+                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="vengefulspirit_magic_missile" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/vengefulspirit_magic_missile_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Magic Missile</h2>
+                            <p>Fires a magic missile at an enemy unit, stunning and dealing damage.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="vengefulspirit_wave_of_terror" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/vengefulspirit_wave_of_terror_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Wave of Terror</h2>
+                            <p>Vengeful Spirit lets loose a wicked cry, weakening the armor of enemies and giving vision of the path ahead.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="vengefulspirit_command_aura" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/vengefulspirit_command_aura_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Vengeance Aura</h2>
+                            <p>Vengeful Spirit's presence increases the physical damage of nearby friendly units. Spawns a Vengeance Illusion when you die that lasts until you revive.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="vengefulspirit_nether_swap" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/vengefulspirit_nether_swap_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Nether Swap</h2>
+                            <p>Instantaneously swaps positions with a target Hero, friend or enemy.  Nether Swap interrupts channeling abilities on the target.Upgradable by Aghanim's Scepter.</p>
+                        </div></br></br>
+                        </a>
+                        
+                        
+                                                                    <a id="link_riki" class="heroPickerIconLink" /><h1>Riki</h1>
+                            <img id="hover_riki" class="heroHoverLarge" style="display:none;" src="http://cdn.dota2.com/apps/dota2/images/heroes/riki_hphover.png?v=5205887" />
+                            <img id="base_riki" class="heroHoverSmall" src="http://cdn.dota2.com/apps/dota2/images/heroes/riki_sb.png?v=5205887" />
+                            <h3>BIO</h3>
+                            <p>Riki was born middle child to the great dynasty of Tahlin. With an older brother groomed for the throne, and a younger brother coddled and kept, Riki, the small middle son, seemed born for the art of invisibility. It was an art he cultivated, and one which ultimately saved his life on the night that his people were betrayed and his family slaughtered. Of all the royal line, he alone escaped, small and agile, unassuming, using smoke as cover. He cut his way out of the royal grounds, using the advantage of surprise, quietly slitting the throats of one enemy warrior after another. Now free of his royal responsibilities, Riki uses his talents in service to a new trade: Stealth Assassin. He silences his enemies, sharpening his skills, hoping to one day take revenge on those who killed his family and robbed him of his birthright.</p>
+                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="riki_smoke_screen" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/riki_smoke_screen_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Smoke Screen</h2>
+                            <p>Throws down a smoke bomb, silencing enemies, and causing them to miss most attacks, as well as slowing movement.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="riki_blink_strike" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/riki_blink_strike_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Blink Strike</h2>
+                            <p>Teleports behind the target unit, striking for bonus damage if it is an enemy.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="riki_permanent_invisibility" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/riki_permanent_invisibility_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Cloak and Dagger</h2>
+                            <p>Riki fades into the shadows, becoming invisible. Every time Riki strikes his enemy from behind, he deals bonus damage based on his Agility. When Riki attacks, he becomes visible.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="riki_tricks_of_the_trade" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/riki_tricks_of_the_trade_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Tricks of the Trade</h2>
+                            <p>CHANNELED - Riki phases out of the world while striking random enemy heroes from behind in an area around him.Upgradable by Aghanim's Scepter.</p>
+                        </div></br></br>
+                        </a>
+                                                                </div>
+                    <br clear="left" />
+                </div>
+                <div class="heroColRight">
+                    <div id="columnHeader"><span id="columnHeaderTextInt">Intelligence</span></div>
+                    <div class="heroIcons">
+                                                                    <a id="link_crystal_maiden" class="heroPickerIconLink" /><h1>Crystal Maiden</h1>
+                            <img id="hover_crystal_maiden" class="heroHoverLarge" style="display:none;" src="http://cdn.dota2.com/apps/dota2/images/heroes/crystal_maiden_hphover.png?v=5205887" />
+                            <img id="base_crystal_maiden" class="heroHoverSmall" src="http://cdn.dota2.com/apps/dota2/images/heroes/crystal_maiden_sb.png?v=5205887" />
+                            <h3>BIO</h3>
+                            <p>Born in a temperate realm, raised with her fiery older sister Lina, Rylai the Crystal Maiden soon found that her innate elemental affinity to ice created trouble for all those around her. Wellsprings and mountain rivers froze in moments if she stopped to rest nearby; ripening crops were bitten by frost, and fruiting orchards turned to mazes of ice and came crashing down, spoiled. When their exasperated parents packed Lina off to the equator, Rylai found herself banished to the cold northern realm of Icewrack, where she was taken in by an Ice Wizard who had carved himself a hermitage at the crown of the Blueheart Glacier. After long study, the wizard pronounced her ready for solitary practice and left her to take his place, descending into the glacier to hibernate for a thousand years. Her mastery of the Frozen Arts has only deepened since that time, and now her skills are unmatched.</p>
+                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="crystal_maiden_crystal_nova" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/crystal_maiden_crystal_nova_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Crystal Nova</h2>
+                            <p>A burst of damaging frost slows enemy movement and attack rate in the targeted area.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="crystal_maiden_frostbite" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/crystal_maiden_frostbite_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Frostbite</h2>
+                            <p>Encases an enemy unit in ice, prohibiting movement and attack, while dealing damage over time. Lasts 10 seconds on creeps level 6 or lower.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="crystal_maiden_brilliance_aura" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/crystal_maiden_brilliance_aura_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Arcane Aura</h2>
+                            <p>Gives additional mana regeneration to all friendly units on the map. This bonus is increased for Crystal Maiden.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="crystal_maiden_freezing_field" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/crystal_maiden_freezing_field_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Freezing Field</h2>
+                            <p>CHANNELED - Surrounds Crystal Maiden with random icy explosions that slow enemies and deal massive damage. Grants bonus armor while channeling. Lasts 10 seconds.Upgradable by Aghanim's Scepter.</p>
+                        </div></br></br>
+                        </a>
+                        
+                        
+                                                                    <a id="link_puck" class="heroPickerIconLink" /><h1>Puck</h1>
+                            <img id="hover_puck" class="heroHoverLarge" style="display:none;" src="http://cdn.dota2.com/apps/dota2/images/heroes/puck_hphover.png?v=5205887" />
+                            <img id="base_puck" class="heroHoverSmall" src="http://cdn.dota2.com/apps/dota2/images/heroes/puck_sb.png?v=5205887" />
+                            <h3>BIO</h3>
+                            <p> While Puck seems at first glance a mischievous, childish character, this quality masks an alien personality. The juvenile form of a Faerie Dragon, a creature that lives for eons, Puck spends countless millennia in its childish form. So while it is technically true that Puck is juvenile, it will continue to be so when the cities of the present age have sloughed away into dust. Its motives are therefore inscrutable, and what appears to be play may in fact hide a darker purpose. Its endless fondness for mischief is the true indicator of Puck's true nature.</p>
+                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="puck_illusory_orb" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/puck_illusory_orb_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Illusory Orb</h2>
+                            <p>Puck launches a magic orb that floats in a straight path, damaging enemy units along the way. At any point, Puck may teleport to the orb's location using Ethereal Jaunt.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="puck_waning_rift" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/puck_waning_rift_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Waning Rift</h2>
+                            <p>Puck releases a burst of faerie dust that deals damage and silences enemy units nearby.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="puck_phase_shift" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/puck_phase_shift_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Phase Shift</h2>
+                            <p>Puck briefly shifts into another dimension where it is immune from harm.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="puck_dream_coil" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/puck_dream_coil_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Dream Coil</h2>
+                            <p>Creates a coil of volatile magic that latches onto enemy Heroes, stunning them for 0.5 seconds and damaging them.  If the enemy hero stretches the coil by moving too far away, it snaps, stunning and dealing additional damage.Upgradable by Aghanim's Scepter.</p>
+                        </div></br></br>
+                        </a>
+                        
+                        
+                                                                    <a id="link_storm_spirit" class="heroPickerIconLink" /><h1>Strom Spirit</h1>
+                            <img id="hover_storm_spirit" class="heroHoverLarge" style="display:none;" src="http://cdn.dota2.com/apps/dota2/images/heroes/storm_spirit_hphover.png?v=5205887" />
+                            <img id="base_storm_spirit" class="heroHoverSmall" src="http://cdn.dota2.com/apps/dota2/images/heroes/storm_spirit_sb.png?v=5205887" />
+                            <h3>BIO</h3>
+                            <p> Storm Spirit is literally a force of nature--the wild power of wind and weather, bottled in human form. And a boisterous, jovial, irrepressible form it is! As jolly as a favorite uncle, he injects every scene with crackling energy. But it was not always thus, and there was tragedy in his creation. Generations ago, in the plains beyond the Wailing Mountains, a good people lay starving in drought and famine. A simple elementalist, Thunderkeg by name, used a forbidden spell to summon the spirit of the storm, asking for rain. Enraged at this mortal's presumption, the Storm Celestial known as Raijin lay waste to the land, scouring it bare with winds and flood. Thunderkeg was no match for the Celestial--at least until he cast a suicidal spell that forged their fates into one: he captured the Celestial in the cage of his own body. Trapped together, Thunderkeg's boundless good humor fused with Raijin's crazed energy, creating the jovial Raijin Thunderkeg, a Celestial who walks the world in physical form.</p>
+                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="storm_spirit_static_remnant" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/storm_spirit_static_remnant_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Static Remnant</h2>
+                            <p>Creates an explosively charged image of Storm Spirit that lasts 12 seconds and will detonate and deal damage if an enemy unit comes near it.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="storm_spirit_electric_vortex" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/storm_spirit_electric_vortex_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Electric Vortex</h2>
+                            <p>A vortex that pulls an enemy unit to Storm Spirit's location.Upgradable by Aghanim's Scepter.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="storm_spirit_overload" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/storm_spirit_overload_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Overload</h2>
+                            <p>Casting a spell creates an electrical charge, which is released in a burst on his next attack, dealing damage and slowing nearby enemies.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="storm_spirit_ball_lightning" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/storm_spirit_ball_lightning_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Ball Lightning</h2>
+                            <p>Storm Spirit becomes volatile electricity, charging across the battlefield until he depletes his mana or reaches his target. The activation mana cost is 30+8% of his total mana pool, and the cost per 100 units traveled is 12+0.7% of his total mana pool.  Damage is expressed in damage per 100 units traveled.</p>
+                        </div></br></br>
+                        </a>
+                        
+                        
+                                                                    <a id="link_windrunner" class="heroPickerIconLink" /><h1>Wind Ranger</h1>
+                            <img id="hover_windrunner" class="heroHoverLarge" style="display:none;" src="http://cdn.dota2.com/apps/dota2/images/heroes/windrunner_hphover.png?v=5205887" />
+                            <img id="base_windrunner" class="heroHoverSmall" src="http://cdn.dota2.com/apps/dota2/images/heroes/windrunner_sb.png?v=5205887" />
+                            <h3>BIO</h3>
+                            <p>The western forests guard their secrets well. One of these is Lyralei, master archer of the wood, and favored godchild of the wind. Known now as Windranger, Lyralei's family was killed in a storm on the night of her birth--their house blown down by the gale, contents scattered to the winds. Only the newborn survived among the debris field of death and destruction. In the quiet after the storm, the wind itself took notice of the lucky infant crying in the grass. The wind pitied the child and so lifted her into the sky and deposited her on a doorstep in a neighboring village. In the years that followed, the wind returned occasionally to the child's life, watching from a distance while she honed her skills. Now, after many years of training, Windranger fires her arrows true to their targets. She moves with blinding speed, as if hastened by a wind ever at her back. With a flurry of arrows, she slaughters her enemies, having become, nearly, a force of nature herself.</p>
+                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="windrunner_shackleshot" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/windrunner_shackleshot_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Shackleshot</h2>
+                            <p>Shackles the target to an enemy unit or tree in a line directly behind it.  If no unit or tree is present, the stun duration is reduced to 0.75.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="windrunner_powershot" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/windrunner_powershot_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Powershot</h2>
+                            <p>Windranger charges her bow for up to 1 second for a single powerful shot, which deals more damage the longer it is charged. The arrow damages enemies and destroys trees along its path. For each enemy that Powershot hits, its damage is reduced by 20%.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="windrunner_windrun" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/windrunner_windrun_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Windrun</h2>
+                            <p>Increases movement speed and adds evasion from all physical attacks, while slowing movement of nearby enemies.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="windrunner_focusfire" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/windrunner_focusfire_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Focus Fire</h2>
+                            <p>Windranger channels the wind to gain 450 additional attack speed against a single enemy unit or structure, though with a reduction to her attack damage.  Extra damage from secondary item effects is not reduced.  Lasts 20 seconds.Upgradable by Aghanim's Scepter.</p>
+                        </div></br></br>
+                        </a>
+                        
+                        
+                                                                    <a id="link_zuus" class="heroPickerIconLink" /><h1>Zeus</h1>
+                            <img id="hover_zuus" class="heroHoverLarge" style="display:none;" src="http://cdn.dota2.com/apps/dota2/images/heroes/zuus_hphover.png?v=5205887" />
+                            <img id="base_zuus" class="heroHoverSmall" src="http://cdn.dota2.com/apps/dota2/images/heroes/zuus_sb.png?v=5205887" />
+                            <h3>BIO</h3>
+                            <p>Lord of Heaven, father of gods, Zeus treats all the Heroes as if they are his rambunctious, rebellious children. After being caught unnumbered times in the midst of trysts with countless mortal women, his divine wife finally gave him an ultimatum: 'If you love mortals so much, go and become one. If you can prove yourself faithful, then return to me as my immortal husband. Otherwise, go and die among your creatures.' Zeus found her logic (and her magic) irrefutable, and agreed to her plan. He has been on his best behavior ever since, being somewhat fonder of immortality than he is of mortals. But to prove himself worthy of his eternal spouse, he must continue to pursue victory on the field of battle.</p>
+                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="zuus_arc_lightning" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/zuus_arc_lightning_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Arc Lightning</h2>
+                            <p>Hurls a bolt of lightning that leaps through nearby enemy units.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="zuus_lightning_bolt" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/zuus_lightning_bolt_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Lightning Bolt</h2>
+                            <p>Calls down a bolt of lightning to strike an enemy unit, causing damage and a mini-stun. When cast, Lightning Bolt briefly provides unobstructed vision and True Sight around the target in a 750 radius. Can be cast on the ground, affecting the closest enemy hero in 325 range.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="zuus_static_field" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/zuus_static_field_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Static Field</h2>
+                            <p>Zeus shocks any enemy hit by his abilities, causing damage proportional to their current health.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="zuus_thundergods_wrath" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/zuus_thundergods_wrath_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Thundergod's Wrath</h2>
+                            <p>Strikes all enemy heroes with a bolt of lightning, no matter where they may be.  Thundergod's Wrath also provides True Sight around each hero struck.  If an enemy hero is invisible, it takes no damage, but the True Sight is still created at that hero's location.</p>
+                        </div></br></br>
+                        </a>
+                        
+                        
+                                                                    <a id="link_lina" class="heroPickerIconLink" /><h1>lina</h1>
+                            <img id="hover_lina" class="heroHoverLarge" style="display:none;" src="http://cdn.dota2.com/apps/dota2/images/heroes/lina_hphover.png?v=5205887" />
+                            <img id="base_lina" class="heroHoverSmall" src="http://cdn.dota2.com/apps/dota2/images/heroes/lina_sb.png?v=5205887" />
+                            <h3>BIO</h3>
+                            <p>The sibling rivalries between Lina the Slayer, and her younger sister Rylai, the Crystal Maiden, were the stuff of legend in the temperate region where they spent their quarrelsome childhoods together. Lina always had the advantage, however, for while Crystal was guileless and naive, Lina's fiery ardor was tempered by cleverness and conniving. The exasperated parents of these incompatible offspring went through half a dozen homesteads, losing one to fire, the next to ice, before they realized life would be simpler if the children were separated. As the oldest, Lina was sent far south to live with a patient aunt in the blazing Desert of Misrule, a climate that proved more than comfortable for the fiery Slayer. Her arrival made quite an impression on the somnolent locals, and more than one would-be suitor scorched his fingers or went away with singed eyebrows, his advances spurned. Lina is proud and confident, and nothing can dampen her flame.</p>
+                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="lina_dragon_slave" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/lina_dragon_slave_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Dragon Slave</h2>
+                            <p>Lina channels the breath of a dragon, sending out a wave of fire that scorches every enemy in its path.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="lina_light_strike_array" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/lina_light_strike_array_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Light Strike Array</h2>
+                            <p>Summons a column of flames that damages and stuns enemies.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="lina_fiery_soul" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/lina_fiery_soul_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Fiery Soul</h2>
+                            <p>Grants bonus attack and movement speed each time Lina casts a spell. Stacks with itself. Lasts 10 seconds.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="lina_laguna_blade" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/lina_laguna_blade_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Laguna Blade</h2>
+                            <p>Fires off a bolt of lightning at a single enemy unit, dealing massive damage.Upgradable by Aghanim's Scepter.</p>
+                        </div></br></br>
+                        </a>
+                        
+                        
+                                                                    <a id="link_shadow_shaman" class="heroPickerIconLink" /><h1>Shadow Shaman</h1>
+                            <img id="hover_shadow_shaman" class="heroHoverLarge" style="display:none;" src="http://cdn.dota2.com/apps/dota2/images/heroes/shadow_shaman_hphover.png?v=5205887" />
+                            <img id="base_shadow_shaman" class="heroHoverSmall" src="http://cdn.dota2.com/apps/dota2/images/heroes/shadow_shaman_sb.png?v=5205887" />
+                            <h3>BIO</h3>
+                            <p>Born in the Bleeding Hills, Rhasta was just a starving youngling when picked up by a travelling con-man. For two pins of copper, the old con-man would tell your fortune. For three, he'd castrate your pig, for five, he'd circumcise your sons. For a good meal, he'd don his shaman garb, read from his ancient books, and lay a curse upon your enemies. His strange new youngling, part hill troll, part...something else, worked as assistant and lent an air of the exotic to the con-man's trade. Always one step ahead of cheated customers, one town ahead of a pursuing patronage, the two trekked across the blighted lands until one day the con-man realized that the little youngling could actually do what he only pretended at. His ward had a gift--a gift that customers valued. And so the youngling Rhasta was thrust before the crowds, and the trade-name Shadow Shaman was born. The two continued from town to town, conjuring for money as Shadow Shaman's reputation grew. Eventually, the pair's duplicitous past caught up with them, and they were ambushed by a mob of swindled ex-clients. The con-man was slain, and for the first time, Rhasta used his powers for darkness, massacring the attackers. He buried his beloved master, and now uses his powers to destroy any who would seek to do him harm.</p>
+                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="shadow_shaman_ether_shock" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/shadow_shaman_ether_shock_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Ether Shock</h2>
+                            <p>Creates a cone of ethereal energy that strikes multiple enemy units.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="shadow_shaman_voodoo" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/shadow_shaman_voodoo_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Hex</h2>
+                            <p>Transforms an enemy unit into a harmless creature, disabling their attacks and abilities.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="shadow_shaman_shackles" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/shadow_shaman_shackles_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Shackles</h2>
+                            <p>CHANNELED - Magically binds an enemy unit so that it cannot move or attack, while dealing damage over time.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="shadow_shaman_mass_serpent_ward" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/shadow_shaman_mass_serpent_ward_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Mass Serpent Ward</h2>
+                            <p>Summons 10 Serpent Wards to attack enemy units and structures. The Wards are immune to magic. It takes two hits to destroy a single Ward.Upgradable by Aghanim's Scepter.</p>
+                        </div></br></br>
+                        </a>
+                        
+                        
+                                                                    <a id="link_tinker" class="heroPickerIconLink" /><h1>Tinker</h1>
+                            <img id="hover_tinker" class="heroHoverLarge" style="display:none;" src="http://cdn.dota2.com/apps/dota2/images/heroes/tinker_hphover.png?v=5205887" />
+                            <img id="base_tinker" class="heroHoverSmall" src="http://cdn.dota2.com/apps/dota2/images/heroes/tinker_sb.png?v=5205887" />
+                            <h3>BIO</h3>
+                            <p>Boush the Tinker's diminutive race is known for its intelligence, its cunning, and its prickly relationship with magic. As a matter of pride, they survive by their wits, and use only those powers of nature that may be unlocked through rational methodologies. Even this forbearance has led to a great deal of trouble, as Boush can attest. Once a key investigator of natural law, Boush the Tinker led a vast intellectual investigation into the workings of nature, founding a subterranean laboratory in the rumored, mist-wreathed wastes of the Violet Plateau. While scorning mages for the dangers they visit upon the world, Boush and his Tinker associates haughtily wrenched open a portal to some realm beyond comprehension and ushered in some nightmares of their own. A black mist rose from the cavernous interior of the Violet Plateau, shrouding it in permanent darkness from which sounds of horror perpetually emanate. Boush escaped with only his wits and the contraptions he carried, the sole Tinker to survive the Violet Plateau Incident.</p>
+                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="tinker_laser" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/tinker_laser_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Laser</h2>
+                            <p>Fires an intense energy beam, dealing damage and blinding the target, causing it to miss all physical attacks. Upgradable by Aghanim's Scepter.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="tinker_heat_seeking_missile" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/tinker_heat_seeking_missile_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Heat-Seeking Missile</h2>
+                            <p>Launches a pair of rockets at the nearest visible enemy heroes within 2500 range. Upgradable by Aghanim's Scepter.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="tinker_march_of_the_machines" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/tinker_march_of_the_machines_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>March of the Machines</h2>
+                            <p>Enlists an army of robotic minions to destroy enemy units in an area around Tinker.</p>
+                        </div>
+                        <br clear="left" />
+                    </div>
+                                                                                                                                                                                    <div class="overviewAbilityRow">
+                        <div class="name1"><img abilityname="tinker_rearm" class="name1" src="http://cdn.dota2.com/apps/dota2/images/abilities/tinker_rearm_hp1.png?v=5207763" width="50" height="50" /></div>
+                        <div class="overviewAbilityRowDescription">
+                            <h2>Rearm</h2>
+                            <p>CHANNELED - Resets the cooldown on most of Tinker's items and abilities.</p>
+                        </div></br></br>
+                        </a>
+                                                                </div>
+                    <br clear="left" />
+                </div>
+                <br clear="left" />
+            </div>
+            </div>
+            <div id="footer">
+                <img src="http://cdn.dota2.com/apps/dota2/images/international2019/global/dota_logo.png" /><img src="http://cdn.dota2.com/apps/dota2/images/international2019/global/valve_logo.png" />
+            </div>
+        </div>
+    </body>
+</html>
